@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin: 30px;
+}
+
+.card {
+  height: 500px;
+  width: 300px;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.card--icon {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.card--icon > i {
+  position: absolute;
+  font-size: 1.6rem;
+  top: 14px;
+  left: 28px;
+  opacity: 0.8;
+}
+
+.card--description > h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.sedans {
+  background-color: #e28525;
+}
+
+.sedans > button {
+  color: #e28525;
+}
+
+.helico {
+  background-color: #016972;
+}
+
+.helico > button {
+  color: #016972;
+}
+
+.bicycle {
+  background-color: #00403f;
+}
+
+.bicycle > button {
+  color: #00403f;
+}
+
+.card--button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.card--button:active {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+}
